@@ -1,8 +1,10 @@
 #Develop an interface `IVehicle` with abstract methods `start_engine()` and `stop_engine()`. Implement it in `Car`, `Bike`, and `Truck` classes.
 from abc import ABC,abstractmethod
 class IVehicle(ABC):
+    @abstractmethod
     def start_engine(self):
         pass
+    @abstractmethod
     def stop_engine(self):
         pass
 class Car(IVehicle):

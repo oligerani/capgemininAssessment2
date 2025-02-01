@@ -5,8 +5,11 @@ class IDatabaseOperations(ABC):
     @abstractmethod
     def insert(self):
         pass
+    
+    @abstractmethod
     def update(self):
         pass
+    @abstractmethod
     
     def delete(self):
         pass
@@ -39,5 +42,6 @@ class NoSQLDatabase(IDatabaseOperations):
 ob=NoSQLDatabase("user data")
 print(ob.insert())
 print(ob.delete())
-print(ob.update())   
+print(ob.update()) 
+  
        

@@ -3,10 +3,13 @@ class ICalculator(ABC):
     @abstractmethod
     def add(self):
         pass
+    @abstractmethod
     def substract(self):
         pass
+    @abstractmethod
     def multiply(self):
         pass
+    @abstractmethod
     def divide(self):
         pass
 class BasicCalculator(ICalculator):
